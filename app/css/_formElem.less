@@ -1,0 +1,167 @@
+
+.customselect {
+  width: 190px;
+  @media @maxWidth767 {
+    width: 100%;
+  }
+  button {
+    outline: 0;
+    border: none;
+    width: 100%;
+    color: #757575;
+    .font;
+    font-size: 16px;
+    display: block;
+    padding: 0 0 9px 0;
+    text-align: left;
+    background: url("../img/caret-down.png") right 10px no-repeat;
+    background-size: auto;
+    cursor: pointer;
+    border-bottom: 1px solid #ffd29f;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 9px 0;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background: white;
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+    color: #757575;
+    .font;
+    font-size: 16px;
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.open {
+  ul {
+    display: block;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#input-file {
+  display: none;
+}
+
+.file {
+  .font;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+  font-size: 13px;
+  color: #757575;
+  width: 190px;
+  height: 37px;
+  border: 1px solid #ffd29f;
+  background: #faf7f3 url("../img/layers.png") right no-repeat;
+  cursor: pointer;
+  @media @maxWidth767 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* radio btn*/
+.radio {
+  z-index: -1;
+  opacity: 0;
+  display: none;
+}
+.radio + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 21px;
+}
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #ffd29f;
+  border-radius: 50%;
+  background: #FFF;
+}
+.radio + label:after {
+  content: '';
+
+}
+.radio:checked + label:after {
+  opacity: 1;
+  position: absolute;
+  left: 5px;
+  top: -3px;
+  width: 2px;
+  height: 4px;
+  border: solid #f78c1f;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(39deg);
+  -ms-transform: rotate(39deg);
+  transform: rotate(39deg);
+}
+.radio:checked + label:before {
+  border: 1px solid #f78c1f;
+}
+.radio:checked + label {
+  color: #333333;
+}
+
+.radio:focus + label:before {
+  border: 1px solid #f78c1f;
+}
+/**/
+
+.input-text {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffd29f;
+  background: transparent;
+  color: #757575;
+  .font;
+  font-size: 16px;
+  padding-bottom: 8px;
+  @media @maxWidth767 {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

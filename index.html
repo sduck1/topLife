@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TopLife</title>
+    <link rel="stylesheet" href="app/js/noUiSlider-13.1.2/distribute/nouislider.css">
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+
+<section class="section-banner">
+
+    <div class="section-banner__container">
+        <div class="section-banner__left ">
+            <h1 class="section-banner__head-left">Прием полиэтилена</h1>
+            <p class="section-banner__text">Принимаем все виды полиэтилена: ПНД пакеты, стрейч-пленку, цветные или загрязненные отходы ПВД</p>
+            <div class="block-info">
+                <div class="block-info__item">
+                    Пункт приема работает 24/7
+                </div>
+                <div class="block-info__item block-info__item_2">
+                    Вывоз из любого района Москвы и МО
+                </div>
+                <div class="block-info__item block-info__item_3">
+                    Бесплатная погрузка и разгрузка
+                </div>
+                <div class="block-info__item block-info__item_4">
+                    Оплата удобным способом в день сдачи
+                </div>
+            </div>
+            <button id="show" class="section-banner__btn-mobil">Рассчитать стоимость</button>
+
+        </div>
+        <div class="section-banner__right hide-mobil">
+            <h2 class="section-banner__head-right">Мы заплатим вам</h2>
+            <h3 class="section-banner__head2-right">заявка на расчет</h3>
+            <div class="block-elem">
+                <div class="block-elem__counter">
+                    <div class="block-elem__num">
+                        <span>Вес, кг</span>
+                        <span id="lower-value" class="block-elem__kg">300</span>
+                    </div>
+                    <div id="range-custom" class="block-elem__range"></div>
+                </div>
+                <div class="block-elem__file">
+                    <input id="input-file" type="file">
+                    <label class="file" for="input-file">Оценить по фото</label>
+                </div>
+                <div class="block-elem__select">
+                    <p class="block-elem__label">Вид вторсырья</p>
+                    <div id="lang-select" class="customselect">
+                        <button class="title">Полиэтилен</button>
+                        <ul>
+                            <li data-value="EN">Полиэтилен</li>
+                            <li data-value="RU">Полиэтилен2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-elem__block-delivery">
+                    <div class="block-elem__radio">
+                        <input id="radio1" onchange="checkLabel(this,'radio1')" class="radio" type="radio" name="radioBtn">
+                        <label for="radio1"></label>
+                        <label for="radio1">Привезу сам</label>
+                    </div>
+                    <div class="block-elem__radio">
+                        <input id="radio2" onchange="checkLabel(this,'radio2')" class="radio" type="radio" name="radioBtn">
+                        <label for="radio2"></label>
+                        <label for="radio2">Нужен вывоз</label>
+                    </div>
+                </div>
+                <div class="block-elem__input">
+                    <input type="text" class="input-text" placeholder="Ваше имя">
+                </div>
+                <div class="block-elem__input">
+                    <input type="tel" class="input-text" placeholder="Ваш телефон*">
+                </div>
+            </div>
+            <button class="section-banner__btn">Отправить</button>
+            <p class="section-banner__warning">
+                Отправляя сообщение вы соглашаетесь
+                на <a>обработку персональных данных</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal__content">
+            <span class="close"></span>
+            <h2 class="section-banner__head-right">Мы заплатим вам</h2>
+            <h3 class="section-banner__head2-right">заявка на расчет</h3>
+            <div class="block-elem">
+                <div class="block-elem__counter">
+                    <div class="block-elem__num">
+                        <span>Вес, кг</span>
+                        <span id="lower-value2" class="block-elem__kg">300</span>
+                    </div>
+                    <div id="range-custom2" class="block-elem__range"></div>
+                </div>
+                <div class="block-elem__file">
+                    <input id="input-file" type="file">
+                    <label class="file" for="input-file">Оценить по фото</label>
+                </div>
+                <div class="block-elem__select">
+                    <p class="block-elem__label">Вид вторсырья</p>
+                    <div id="lang-select" class="customselect">
+                        <button class="title">Полиэтилен</button>
+                        <ul>
+                            <li data-value="EN">Полиэтилен</li>
+                            <li data-value="RU">Полиэтилен2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-elem__block-delivery">
+                    <div class="block-elem__radio">
+                        <input id="radio1" onchange="checkLabel(this,'radio1')" class="radio" type="radio" name="radioBtn">
+                        <label for="radio1"></label>
+                        <label for="radio1">Привезу сам</label>
+                    </div>
+                    <div class="block-elem__radio">
+                        <input id="radio2" onchange="checkLabel(this,'radio2')" class="radio" type="radio" name="radioBtn">
+                        <label for="radio2"></label>
+                        <label for="radio2">Нужен вывоз</label>
+                    </div>
+                </div>
+                <div class="block-elem__input">
+                    <input type="text" class="input-text" placeholder="Ваше имя">
+                </div>
+                <div class="block-elem__input">
+                    <input type="tel" class="input-text" placeholder="Ваш телефон*">
+                </div>
+            </div>
+            <button class="section-banner__btn">Отправить</button>
+            <p class="section-banner__warning">
+                Отправляя сообщение вы соглашаетесь
+                на <a>обработку персональных данных</a>
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<script src="app/js/noUiSlider-13.1.2/distribute/nouislider.js"></script>
+<script src="app/js/index.js"></script>
+<script src="app/js/select.js"></script>
+<script>
+
+</script>
+</body>
+</html>
